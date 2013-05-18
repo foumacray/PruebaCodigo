@@ -1,19 +1,15 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package codingdojo;
 
-/**
- *
- * @author usuario
- */
+
 public class Palindromo {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public Palindromo(int i) {
+        throw new UnsupportedOperationException("Not yet implemented");
     }
+
+    public boolean isPalindromo(){
+        return false;
+    }
+    
 }

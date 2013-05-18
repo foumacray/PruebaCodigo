@@ -1,15 +1,14 @@
-
 package codingdojo;
-
 
 public class Palindromo {
 
+    int number;
+
     public Palindromo(int i) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        number = i;
     }
 
-    public boolean isPalindromo(){
+    public boolean isPalindromo() {
         return false;
     }
-    
 }

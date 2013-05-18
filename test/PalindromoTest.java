@@ -46,13 +46,5 @@ public class PalindromoTest {
         Palindromo myPalindromo = new Palindromo(712347);
         assertFalse(myPalindromo.isPalindromo());
     }
-     @Test
-    public void palindromoWith0atFirst() {
-        Palindromo myPalindromo = new Palindromo(011);
-        assertFalse(myPalindromo.isPalindromo());
-    }
-      public void notPalindromoWith0atFirst() {
-        Palindromo myPalindromo = new Palindromo(010);
-        assertFalse(myPalindromo.isPalindromo());
-    }
+  
 }

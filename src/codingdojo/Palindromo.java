@@ -6,7 +6,6 @@ public class Palindromo {
 
     public Palindromo(int i) {
         numberOnString = String.valueOf(i);
-        deleteZerosAtBegin(numberOnString);
     }
 
     public boolean isPalindromo() {
@@ -20,10 +19,6 @@ public class Palindromo {
             }
         }
         return true;
-    }
-
-    private void deleteZerosAtBegin(String numberOnString) {
-        
     }
    
 }

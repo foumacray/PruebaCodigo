@@ -6,13 +6,13 @@ import static org.junit.Assert.*;
 public class PalindromoTest {
 
     @Test
-    public void PalindromoOfLength1() {
+    public void palindromoOfLength1() {
         Palindromo myPalindromo = new Palindromo(1);
         assertTrue(myPalindromo.isPalindromo());
     }
 
     @Test
-    public void NotpalindromoOfLength2() {
+    public void notPalindromoOfLength2() {
         Palindromo myPalindromo = new Palindromo(56);
         assertFalse(myPalindromo.isPalindromo());
     }
@@ -25,13 +25,13 @@ public class PalindromoTest {
 
     @Test
     public void palindromoOfLength3() {
-        Palindromo myPalindromo = new Palindromo(77);
+        Palindromo myPalindromo = new Palindromo(717);
         assertTrue(myPalindromo.isPalindromo());
     }
 
     @Test
     public void notPalindromoOfLength3() {
-        Palindromo myPalindromo = new Palindromo(77);
+        Palindromo myPalindromo = new Palindromo(677);
         assertFalse(myPalindromo.isPalindromo());
     }
 
@@ -42,8 +42,17 @@ public class PalindromoTest {
     }
 
     @Test
-    public void NotpalindromoOfAnyLength() {
+    public void notPalindromoOfAnyLength() {
         Palindromo myPalindromo = new Palindromo(712347);
+        assertFalse(myPalindromo.isPalindromo());
+    }
+     @Test
+    public void palindromoWith0atFirst() {
+        Palindromo myPalindromo = new Palindromo(011);
+        assertFalse(myPalindromo.isPalindromo());
+    }
+      public void notPalindromoWith0atFirst() {
+        Palindromo myPalindromo = new Palindromo(010);
         assertFalse(myPalindromo.isPalindromo());
     }
 }
